@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD065ED9286C6F3F00B1B821 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD065ED8286C6F3F00B1B821 /* BorderButton.swift */; };
 		DD6A4CE128678C8500A1EF4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6A4CE028678C8500A1EF4F /* AppDelegate.swift */; };
 		DD6A4CE328678C8500A1EF4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6A4CE228678C8500A1EF4F /* SceneDelegate.swift */; };
 		DD6A4CE528678C8500A1EF4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6A4CE428678C8500A1EF4F /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD065ED8286C6F3F00B1B821 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		DD6A4CDD28678C8500A1EF4F /* app-swoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-swoosh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD6A4CE028678C8500A1EF4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD6A4CE228678C8500A1EF4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD065ED7286BA88000B1B821 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD065ED8286C6F3F00B1B821 /* BorderButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DD6A4CD428678C8500A1EF4F = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		DD6A4CDF28678C8500A1EF4F /* app-swoosh */ = {
 			isa = PBXGroup;
 			children = (
+				DD065ED7286BA88000B1B821 /* Views */,
 				DD6A4CE028678C8500A1EF4F /* AppDelegate.swift */,
 				DD6A4CE228678C8500A1EF4F /* SceneDelegate.swift */,
 				DD6A4CE428678C8500A1EF4F /* ViewController.swift */,
@@ -141,6 +152,7 @@
 				DD6A4CE528678C8500A1EF4F /* ViewController.swift in Sources */,
 				DD6A4CE128678C8500A1EF4F /* AppDelegate.swift in Sources */,
 				DD6A4CE328678C8500A1EF4F /* SceneDelegate.swift in Sources */,
+				DD065ED9286C6F3F00B1B821 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
