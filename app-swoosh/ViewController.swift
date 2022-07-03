@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet var swooshLogo: UIImageView!
     @IBOutlet var bgImage: UIImageView!
@@ -21,8 +21,16 @@ class ViewController: UIViewController {
         swooshLogo.frame = CGRect(x: view.frame.size.width / 2 - swooshLogo.frame.size.width / 2 , y: 50, width: swooshLogo.frame.size.width, height: swooshLogo.frame.size.height)
             */
         bgImage.frame = view.frame
+        
     }
-
-
+    
+    @IBAction func unwindFromExperienceVC(unwindSegue: UIStoryboardSegue) {
+        
+    }
+    
+    @IBAction func unwindFromSkillVC(segue: UIStoryboardSegue) {
+        
+    }
+    
 }
 

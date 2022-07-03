@@ -13,7 +13,7 @@ class BorderButton: UIButton {
         super.awakeFromNib()
         layer.borderWidth = 3.0
         layer.borderColor = UIColor.black.cgColor
-        layer.backgroundColor = UIColor.brown.cgColor
+        layer.backgroundColor = UIColor.systemBackground.cgColor
     }
 
 }
