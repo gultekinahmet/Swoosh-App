@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Initial Screen-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Initial Screen" id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="WelcomeVC" id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="923.1884057971015" y="83.035714285714278"/>
         </scene>
-        <!--Desired League Screen-->
+        <!--LeagueVC-->
         <scene sceneID="P2Y-u8-DE2">
             <objects>
-                <viewController title="Desired League Screen" id="85v-N5-hYg" sceneMemberID="viewController">
+                <viewController title="LeagueVC" id="85v-N5-hYg" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3KX-ZL-36F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,7 +175,8 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="XUJ-zn-sAX" kind="show" id="6A4-ah-sGy"/>
+                                    <action selector="onNextTapped:" destination="85v-N5-hYg" eventType="touchUpInside" id="LN9-GI-Rjh"/>
+                                    <segue destination="XUJ-zn-sAX" kind="push" id="zoI-Pd-Pgd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOz-C0-IDQ">
@@ -218,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="1796" y="83"/>
         </scene>
-        <!--Experience Selection Screen-->
+        <!--SkillVC-->
         <scene sceneID="JvU-6S-Whq">
             <objects>
-                <viewController title="Experience Selection Screen" id="XUJ-zn-sAX" sceneMemberID="viewController">
+                <viewController title="SkillVC" id="XUJ-zn-sAX" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b7X-Lz-YfI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,9 +297,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="backButton"/>
-                                <connections>
-                                    <segue destination="OeA-zs-M1f" kind="unwind" unwindAction="unwindFromSkillVCWithSegue:" id="ueH-AR-Z3Y"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w4x-8j-sQH"/>
@@ -324,7 +322,6 @@
                     <navigationItem key="navigationItem" id="FxQ-53-b6N"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7v-2I-6XV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="OeA-zs-M1f" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2707" y="83"/>
         </scene>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIGestureRecognizerDelegate {
+class WelcomeVC: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet var swooshLogo: UIImageView!
     @IBOutlet var bgImage: UIImageView!
@@ -28,9 +28,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         
     }
     
-    @IBAction func unwindFromSkillVC(segue: UIStoryboardSegue) {
-        
-    }
     
 }
 
